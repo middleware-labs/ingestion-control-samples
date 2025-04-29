@@ -24,6 +24,6 @@ spec:
             while true; do
               ts=$(date +"%Y-%m-%dT%H:%M:%SZ");
               rand=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1);
-              echo "{\"timestamp\":\"$ts\",\"message\":\"Dummy log data\",\"random\":\"$rand\"}";
+              echo "{ \"timestamp\" : \"$ts\", \"message\" : \"Dummy log data\", \"random\" : \"$rand\" }";
               sleep 5;
             done
