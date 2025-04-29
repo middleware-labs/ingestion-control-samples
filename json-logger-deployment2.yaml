@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: json-logger
+  name: json-logger-space
   labels:
-    app: json-logger
+    app: json-logger-space
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: json-logger
+      app: json-logger-space
   template:
     metadata:
       labels:
-        app: json-logger
+        app: json-logger-space
     spec:
       containers:
-      - name: json-logger
+      - name: json-logger-space
         image: busybox
         command: ["/bin/sh"]
         args:
